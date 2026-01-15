@@ -29,7 +29,7 @@
 color: #727272;
 }
 .bg-light{
-    background-color: rgb(255,144, 14, 0.1);
+    background-color: rgba(230, 163, 87, 0.1);
 }
 .btn-primary{
     background-color: #FF900E;
@@ -91,7 +91,7 @@ align-items: center;
     font-size: 4rem;
 }
 .team-img-container img{
-    width: 300p
+    width: 300px;
 }
 .team-img-container{
 display: grid;
@@ -154,7 +154,7 @@ margin-left: 50px;
 }
 /* features related */
 .features{
-    gap: 100px;
+    gap: 140px;
 }
  #feature-section-title{
         border-left: 5px solid #FF900E;
@@ -172,48 +172,80 @@ margin-left: 50px;
         font-size: 1.16rem;
         margin-top: 10px;
         margin-bottom: 0;
-        
     }
+    #experience-badge{
+        padding: 45px 42px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-left: -100px;
+        margin-top: -100px;
+    } 
+    #experience-year{
+font-size: 2rem;
+font-weight: 600;
+    }
+    .architect-item img{
+ width: 100%;
+    }
+    .foot{
+        margin-top: 120px;
+        text-align: center;
+    }
+
+
 @media screen and (max-width:576px) {
     .navbar,
      .nav-links,
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
     }
-    .banner-image{
-    width: 100%;
+    * .banner-image{
+    width: 90%;
     height: 100%;
    padding: 0 30px;
-    }
+    } 
     .sponsor-companies img{
-        width: 100%;
+        width: 90%;
     }
     .team-img-container, 
     .facts-container, 
     .sponsor-companies{
         grid-template-columns: repeat(1, 1fr);
     }
-    .facts-container{
+    .facts-container,
+    .sponsor-companies{
         justify-items: center;
         gap: 10px;
     }
     .sponsor-companies{
-        justify-items: center;
         gap: 30px;
     }
     .our-features{
         margin-left: 20px;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .architect-item img{
+ width: 90%;
+    }
+    #experience-badge{
+        margin-top: 5px;
+        margin-left: 10px;
     }
    
 }
 
 
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .banner-image{
-    width: 100%;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
     }
@@ -226,4 +258,8 @@ margin-left: 50px;
         gap: 50px;
         justify-items: center;
     }
+    .architect-item img{
+ width: 100%;
+    }
+
 }
